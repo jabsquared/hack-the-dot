@@ -1,0 +1,354 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFF; 
+	font-family: arial, san-serif; 
+}
+
+header, section, footer, aside, nav, main, article, figure
+{ 
+	display: block; 
+}
+
+a {
+	text-decoration: none;
+	color: #2e2e2e;
+}
+
+header {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+
+header img {
+	display: block; 
+	width: 60%;
+	height: auto;
+	margin: 5px auto;
+	border: none;
+}
+
+header nav {
+	text-align: center;  
+	margin: 1% 0;
+	padding: 0;
+	width: 100%;
+	height: 35px;
+}
+
+header nav ul {
+	list-style-type: none;
+	/*border: 1px black solid;*/
+	margin: 0; /*Without this specified margin, there would be a default top and bottom margin*/
+	padding: 0; /*Without this specified padding, there would be some weird default padding*/
+	font-size: 0; /*This gets rid of white space between list items. View header nav li*/
+
+}
+
+header nav li {
+    display: inline; 
+	/*background-color: gray;*/
+	margin: 0 1%;
+	padding: 0;
+    font-size: 18px; /*Overrides the 0 font size of the unordered list*/
+	
+}
+
+header nav ul li a {
+    display: inline-block;
+	border-bottom: 4px solid #666666;
+	/*Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code*/
+
+	
+	/*Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code Test Code*/
+	margin: 0;
+	padding: 4px 0;
+	font-size: 150%;
+	color: #2e2e2e;
+	vertical-align: top; 
+	-webkit-transition: border-width .6s;
+	-moz-transition: border-width .6s;
+	transition: border-width .6; 
+	
+}
+
+header nav a #shop {
+	background-color: #FFF;
+}
+
+	header nav  a:link, header nav a:visited{
+			/*unvisited,visited link*/
+	}       
+
+	header nav ul  a:hover {
+		border-width: 100%;	/*hover over link*/
+
+	}   
+
+	header nav ul   #shop:hover  {
+		border-width: 100%;    /*hover over shop link*/
+	}
+
+	header nav a:active {
+		/*selected link*/
+	}  
+
+.first-section {
+	background-color: #9edada;
+	text-align: center;
+	padding: 0;
+	display: block;
+	overflow: hidden;
+}
+
+.first-section .section-header {
+	display: block;
+	text-align: center;  
+	font-size: 350%;
+	color: #FFF;
+	padding-top: 2%;
+	margin-bottom: 2%;
+}
+
+
+.first-section .right-side-menu {
+	display: block;
+	border: 1px solid black; 
+	float: left;
+	width: 150px;
+	height: 100%;
+	background: transtarent; 
+	margin: 1% 0 0 1%;
+	padding: 0;
+
+}
+
+	.right-side-menu #filter-title {
+		display: block;
+		border-bottom: 1px solid black;
+		height: auto; 
+		margin: 0;
+		padding: 2% 0;
+	}
+		.right-side-menu #filter-title h1, .right-side-menu #filter-title a {
+			display: inline; 
+			margin: 0;
+			padding: 0;
+			position: relative; 
+			text-align: left;
+			margin-right: 1%;
+		}
+
+		.right-side-menu #filter-title a {
+			text-decoration: underline;
+			color: gray; 
+			margin-left: 3%;
+			font-size: 90%;
+		}
+		
+	
+		.main-sidebar-section {
+			list-style: none;
+			width: 100%;
+			position: relative;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.main-sidebar-section li {
+			list-style: none;
+			display: block;
+			margin: 0;
+			padding: 0;
+			text-align: left;
+		}
+		
+			.main-sidebar-section li ul {
+				margin: 0;
+				list-style: none;
+				display: block;
+				margin: 0 auto;
+				padding: 0;
+				width: 100%;
+			}
+		
+				.main-sidebar-section a{
+					display: block;
+					margin: 0 auto;
+					text-decoration:none;
+					width: 100%;
+				}
+				
+			.main-sidebar-section > li > a{
+				padding: 5px 0;
+				border-top: 1px solid gray;
+				border-bottom: 1px solid gray;
+				text-align: left;
+				font-weight: bold;
+			}
+			
+			.main-sidebar-section  li span{
+				background: url(img\icons\arrow-white16.png);
+				height: 100px;
+				width: 10px;
+				background-color: red;
+			}
+			
+			
+			
+.section-picture {
+	position: relative; 
+	display: inline-block;
+	float: left;
+	margin: 1%;
+	width: 235px;
+	padding: 0;
+	background-color: #00acdd;
+	-webkit-transition: background .5s;
+	-moz-transition: background .5s;
+	transition: background .5s; 
+	overflow: hidden;
+}
+
+
+
+.section-picture img {
+	display: block; 
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 0; 
+	border: none;
+}
+
+.info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	max-height: 45px; 
+	-webkit-transition: max-height .5s;
+	-moz-transition: max-height .5s;
+	transition: max-height .5s; 
+	
+	/*---StackOverflow code for a cross-browser transparent background not efffecting its child elements---*/
+	
+	/* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(220, 220, 220);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+
+	/*------------------------------------End Of StackOverflow Code------------------------------------*/
+}
+
+	.section-picture:hover .info{
+		max-height: 300px;
+	}
+
+		.section-picture .info .info-header {
+			display: block;
+			width: 100%;
+			height: 45px;
+		}
+
+			.info-header h3, h4, h5{
+				color: #FFF;
+				margin: 0;
+				padding: 0;
+				opacity: 1;
+				display: inline;
+			}
+
+			
+			.info-header h3 {
+				font-weight: normal;
+			}
+
+			.info-header  h4
+			{
+				margin-right: 10px;
+			}
+
+			.alt-price {
+				text-decoration: line-through;
+				color: #ababab;
+			}
+
+	.info-hidden {
+		width: 100%;
+		height: 115px;
+	}
+
+		.sizes {
+			width: 90%;
+			margin: 0 auto;
+			height: 60px;
+		}
+
+			.size {
+				border: 1px solid white;
+				display: inline-block;
+				float: left;
+				margin: 2%;
+				width: 40px;
+			}
+
+				.size a {
+					display: block;
+					color: white;
+					line-height: 22px;
+				}
+				
+				.size:hover {
+					background-color: white;
+				}
+			
+				.size:hover a{
+					color: black;
+				}
+				
+			.sold-out{
+				border: 1px solid #ababab;
+			}
+			
+				.sold-out a {
+					color: #ababab;
+					cursor: default;
+					pointer-events: none;
+				}
+				
+				.sold-out:hover {
+					background: none;
+				}
+
+				.sold-out:hover a {
+					color: #ababab;
+				}
+				
+		.add-to-cart {
+			border: 1px solid white;
+			height: 30px;
+			width: 70%;
+			margin: 5% auto;
+		}
+		
+			.add-to-cart a{
+				display: block;
+				height: 100%;
+				line-height: 30px;
+				color: white;
+			}
+			
+			.add-to-cart:hover {
+				background-color: white;
+			}
+			
+			.add-to-cart:hover a {
+				color: black;
+			}
